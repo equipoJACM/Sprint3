@@ -35,4 +35,13 @@ public class MovimientoDinero {
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
+
+    public double montos(){
+        return -1;
+    }
+
+    public String usuarioEncargado(){
+
+        return "usuarioEncargado";
+    }
 }

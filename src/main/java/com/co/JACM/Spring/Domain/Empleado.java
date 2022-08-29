@@ -3,14 +3,14 @@ package com.co.JACM.Spring.Domain;
 public class Empleado {
     private String nombre;
     private String correo;
-    private String empresa;
-    private String rol;
+    private String empresaEmpleado;
+    private String rolEmpleado;
 
-    public Empleado(String nombre, String correo, String empresa, String rol) {
+    public Empleado(String nombre, String correo, String empresaEmpleado, String rolEmpleado) {
         this.nombre = nombre;
         this.correo = correo;
-        this.empresa = empresa;
-        this.rol = rol;
+        this.empresaEmpleado = empresaEmpleado;
+        this.rolEmpleado = rolEmpleado;
     }
 
     public String getNombre() {
@@ -29,19 +29,19 @@ public class Empleado {
         this.correo = correo;
     }
 
-    public String getEmpresa() {
-        return empresa;
+    public String getEmpresaEmpleado() {
+        return empresaEmpleado;
     }
 
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
+    public void setEmpresa(String empresaEmpleado) {
+        this.empresaEmpleado = empresaEmpleado;
     }
 
     public String getRol() {
-        return rol;
+        return rolEmpleado;
     }
 
     public void setRol(String rol) {
-        this.rol = rol;
+        this.rolEmpleado = rolEmpleado;
     }
 }

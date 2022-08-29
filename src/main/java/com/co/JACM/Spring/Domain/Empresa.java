@@ -3,47 +3,47 @@ package com.co.JACM.Spring.Domain;
 public class Empresa {
 
 
-    private String nombreEmpresa;
-    private String direccionEmpresa;
-    private Integer telefonoEmpresa;
-    private Integer nitEmpresa;
+    private String nombre;
+    private String direccion;
+    private Integer telefono;
+    private Integer nit;
 
     public Empresa(String nombre, String direccion, Integer telefono, Integer nit) {
-        this.nombreEmpresa = nombre;
-        this.direccionEmpresa = direccion;
-        this.telefonoEmpresa = telefono;
-        this.nitEmpresa = nit;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.nit = nit;
     }
 
     public String getNombre() {
-        return nombreEmpresa;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        this.nombreEmpresa = nombre;
+        this.nombre = nombre;
     }
 
     public String getDireccion() {
-        return direccionEmpresa;
+        return direccion;
     }
 
     public void setDireccion(String direccion) {
-        this.direccionEmpresa = direccion;
+        this.direccion = direccion;
     }
 
     public Integer getTelefono() {
-        return telefonoEmpresa;
+        return telefono;
     }
 
     public void setTelefono(Integer telefono) {
-        this.telefonoEmpresa = telefono;
+        this.telefono = telefono;
     }
 
     public Integer getNit() {
-        return nitEmpresa;
+        return nit;
     }
 
     public void setNit(Integer nit) {
-        this.nitEmpresa = nit;
+        this.nit = nit;
     }
 }
