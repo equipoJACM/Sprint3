@@ -1,4 +1,4 @@
-package com.co.JACM.Spring.Domain;
+package com.co.JACM.Sprint.Entitys;
 
 import lombok.Data;
 

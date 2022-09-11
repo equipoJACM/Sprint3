@@ -1,16 +1,17 @@
-package com.co.JACM.Spring.Controller;
+package com.co.JACM.Sprint.Util;
 
-import com.co.JACM.Spring.Domain.Empleado;
-import com.co.JACM.Spring.Domain.Empresa;
-import com.co.JACM.Spring.Domain.MovimientoDinero;
+import com.co.JACM.Sprint.Entitys.Empleado;
+import com.co.JACM.Sprint.Entitys.Empresa;
+import com.co.JACM.Sprint.Entitys.MovimientoDinero;
 
 public class Instancia {
-    public static void main(String args[]){
+    /*public static void main(String args[]){
         Empleado ObjEmpleado = new Empleado();
         ObjEmpleado.setCorreo("H@gmail.com");
         ObjEmpleado.setEmpresaEmpleado("Multinacional SS");
         ObjEmpleado.setNombre("Jorge Granados");
         ObjEmpleado.setRolEmpleado("Administrativo");
+        System.out.println(ObjEmpleado.getEmpresaEmpleado());
 
         Empresa ObjEmpresa = new Empresa();
         ObjEmpresa.setNombre("Multinacional SS");
@@ -24,5 +25,7 @@ public class Instancia {
         ObjMovDin.setMonto(30000);
         ObjMovDin.montos();
         ObjMovDin.usuarioEncargado();
-    }
+
+        System.out.println("Hola mundo");
+    }*/
 }

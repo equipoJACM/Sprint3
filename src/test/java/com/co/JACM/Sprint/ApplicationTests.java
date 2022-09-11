@@ -1,4 +1,4 @@
-package com.co.JACM.Spring;
+package com.co.JACM.Sprint;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
