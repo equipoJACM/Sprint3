@@ -1,15 +1,13 @@
-package com.co.JACM.Sprint;
+package com.example.JACM;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class JacmApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-
-
+		SpringApplication.run(JacmApplication.class, args);
 	}
 
 }

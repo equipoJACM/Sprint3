@@ -1,10 +1,10 @@
-package com.co.JACM.Sprint;
+package com.example.JACM;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class JacmApplicationTests {
 
 	@Test
 	void contextLoads() {
