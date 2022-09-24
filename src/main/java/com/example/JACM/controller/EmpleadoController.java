@@ -5,11 +5,13 @@ import com.example.JACM.model.Empresa;
 import com.example.JACM.service.EmpleadoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Controller
 public class EmpleadoController {
 
     @Autowired
@@ -19,11 +21,11 @@ public class EmpleadoController {
     private void crearEmpleado(@RequestBody Empleado empleado) {
         empleadoService.crearYActualizarEmpleado(empleado);
     }
-
-    @GetMapping("/lempleado")
-    private List<Empleado> verEmpleado(){
-        return empleadoService.verEmpleado();
-    }
+//
+//    @GetMapping("/lempleado")
+//    private List<Empleado> verEmpleado(){
+//        return empleadoService.verEmpleado();
+//    }
 
     @DeleteMapping("/empleado/{id}")
     private void eliminarEmpleado(@PathVariable("id") Long id){
@@ -35,8 +37,16 @@ public class EmpleadoController {
         empleadoService.crearYActualizarEmpleado(empleado);
     }
 
+//    @GetMapping("/empleado")
+//    public ResponseEntity<List<Empleado>>listarEmpleados(){
+//      return ResponseEntity.ok().body(this.empleadoService.ListarEmpleados());
+//    }
+
+
     @GetMapping("/empleado")
-    public ResponseEntity<List<Empleado>>listarEmpleados(){
-      return ResponseEntity.ok().body(this.empleadoService.ListarEmpleados());
+    public String verEmpleados(Model model){
+        model.addAttribute("empleados",empleadoService.verEmpleado());
+
+        return "empleado";
     }
 }
