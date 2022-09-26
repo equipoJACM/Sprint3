@@ -27,6 +27,11 @@ public class EmpleadoService {
 
     public List<Empleado> ListarEmpleados(){ return this.empleadoRepository.findAll();}
 
+    public Empleado verEmpleadoPorId(Long id) {
+        return empleadoRepository.findById(id).get();
+    }
+
+
     public void eliminarEmpleado(Long id){
         empleadoRepository.deleteById(id);
     }

@@ -19,13 +19,14 @@ public class EmpresaService {
         empresaRepository.save(empresa);
     }
 
-
-
-
     public List<Empresa> verEmpresa(){
         List<Empresa> empresas = new ArrayList<Empresa>();
         empresas.addAll(empresaRepository.findAll());
         return empresas;
+    }
+
+    public Empresa verEmpresaPorId(Long id) {
+        return empresaRepository.findById(id).get();
     }
 
     public void eliminarEmpresa(Long id){
