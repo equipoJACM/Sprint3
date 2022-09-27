@@ -150,6 +150,7 @@
                         <table width="100%" class="table table-hover" id="dataTables-example">
                             <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Nombre</th>
                                 <th>Nit</th>
                                 <th>Contacto</th>
@@ -161,6 +162,7 @@
                             </thead>
                             <tbody>
                             <tr th:each="empresa: ${empresas}">
+                                <td th:text="${empresa.id}"></td>
                                 <td th:text="${empresa.nombre}"></td>
                                 <td th:text="${empresa.nit}"></td>
                                 <td th:text="${empresa.telefono}"></td>
